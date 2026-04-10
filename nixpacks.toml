@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["ffmpeg", "gcc", "python311", "python311Packages.pip"]
+nixPkgs = ["ffmpeg", "python312", "python312Packages.pip"]
 
-[phases.install]
-cmds = ["pip install --upgrade pip", "pip install -r requirements.txt"]
+[variables]
+NIXPACKS_PYTHON_VERSION = "3.12"
